@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!--=========>> HEADER styling <<==========start here -->
+    <header class="hidden lg:block">
+       <div class="h-12 px-4 flex justify-between items-center bg-primary text-gray-100 text-md border-b-[1px] border-primary ">
+        <div class="h-12 flex items-center">
+            <span class="mr-2 border-r-[1px] border-primary h-10 flex items-center pr-2"><i class="fa-solid fa-phone"></i> +123-09060936868  (7AM - 7PM)</span>
+            <span class="mr-2 border-r-[1px] border-primary h-10 flex items-center pr-2"><i class="fa-solid fa-basket-shopping"></i> Free Shipping On Orders</span>
+            <span class="h-10 flex items-center pr-2"><i class="fa-solid fa-building-columns"></i> Bank Offers</span>
+       </div>
+       <div>
+          <div class="flex">
+           <span class="px-3 border-r-[1px] border-primary h-12 flex items-center relative cursor-pointer" onclick="toggleDropdown('dropDownmenu1')">
+               <span class="mr-3">INR<span class=" ml-4"><i class="fa-solid fa-angle-down"></i></span></span>
+               <div class="w-16 bg-primary border-[1px] border-primary absolute top-9 right-5 text-sm hidden" id="dropDownmenu1">
+                <p class="hover:bg-blue-600 px-2 cursor-pointer">INR</p>
+                <p class="hover:bg-blue-600 px-2 cursor-pointer">USD</p>
+                <p class="hover:bg-blue-600 px-2 cursor-pointer">EURO</p>
+                <p class="hover:bg-blue-600 px-2 cursor-pointer">AUD</p>
+               </div>
+           </span>
+           <span class="px-3 border-r-[1px] border-primary h-12 flex items-center relative cursor-pointer"  onclick="toggleDropdown('dropDownmenu2')">
+               <span class="mr-3">EN<span class="ml-2"><i class="fa-solid fa-angle-down"></i></span></span>
+               <div class="w-12 bg-primary absolute border-[1px] border-gray-500 top-9 right-5 cursor-pointer text-sm hidden" id="dropDownmenu2">
+                <p class="hover:bg-blue-600 px-2 cursor-pointer">EN</p>
+                <p class="hover:bg-blue-600 px-2 cursor-pointer">GE</p>
+                <p class="hover:bg-blue-600 px-2 cursor-pointer">SP</p>
+               </div>
+           </span>
+           <span class="pl-3 h-12 flex items-center">
+               <span class="hover:text-primary"><a href="#">CHECKOUT</a></span>
+           </span>
+          </div>
+       </div>
+       </div>
+    </header>
+    <!--=========>> END OR Header styling <<==========start here -->
+
+   <!-- =========>> NAV BAR styling start here <<=========-->
+    <div class="">
+       <div class="px-4 h-24 bg-primary flex justify-between items-center text-gray-100">
+        <div class=" lg:w-auto w-[800px]">
+            <img src="./image/logo.png" alt="">
+        </div>
+        <div class="w-[45%] h-24 flex items-center ">
+            <!-- =========>> NAV BAR styling <<=========-->
+            <nav class="w-full hidden lg:block">
+                <ul class="w-full flex justify-between relative">
+                    <li class="relative group hover:text-primary cursor-pointer h-24 flex items-center">HOME
+                        <i class="fa-solid fa-angle-down"></i>
+                        <!-- =========>> 1st dropdown <<=========-->
+                        <ul class="absolute top-[96px] left-[-25px] text-black bg-white w-56 py-2 pl-6 leading-[40px] hidden group-hover:block">
+                            <li class="hover-move-right"><a href="#">Home Page V1</a></li>
+                            <li class="hover-move-right"><a href="#">Home Page V2</a></li>
+                            <li class="hover-move-right"><a href="#">Home Page V3</a></li>
+                        </ul>
+                    </li>
+                    <li class="h-24 flex items-center hover:text-primary cursor-pointer relative group pl-2">SHOP
+                        <i class="fa-solid fa-angle-down"></i>
+                        <!-- =========>> 2nd dropdown <<=========-->
+                        <ul class="absolute top-[96px] left-[-25px]  text-black bg-white w-56 py-2 pl-6 leading-[40px] hidden group-hover:block">
+                            <li class="hover-move-right"><a href="#">Shop Grid</a></li>
+                            <li class="hover-move-right"><a href="#">Shop List</a></li>
+                            <li class="hover-move-right"><a href="#">Shop Full Width</a></li>
+                            <li class="hover-move-right"><a href="#">Shop Grid 2</a></li>
+                            <li class="hover-move-right"><a href="#">Product Details</a></li>
+                            <li class="hover-move-right"><a href="#">Product Details 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="h-24 flex items-center hover:text-primary cursor-pointer group">PAGES
+                        <i class="fa-solid fa-angle-down"></i>
+                        <!-- =========>> 3rd dropdown <<=========-->
+                        <div class="hidden group-hover:block z-[1]">
+                            <div class="absolute top-[95px] left-[-300px] text-black flex justify-between w-[1100px] h-[380px] p-8 bg-white">
+                                <ul class=" leading-[40px] border-r-[1px] border-gray-200 w-48">
+                                    <li class="font-bold">SHOP LAYOUT</li>
+                                    <li class="hover-move-right"><a href="#">Shop Grid</a></li>
+                                    <li class="hover-move-right"><a href="#">Shop List</a></li>
+                                    <li class="hover-move-right"><a href="#">Shop Full Width</a></li>
+                                    <li class="hover-move-right"><a href="#">Filter Sidebar</a></li>
+                                </ul>
+                                <ul class=" leading-[40px] pr-2 border-r-[1px] border-gray-200">
+                                    <li  class="font-bold">PRODUCT DETAILS</li>
+                                    <li class="hover-move-right"><a href="#">Product Details</a></li>
+                                    <li class="hover-move-right"><a href="#">Product Details 2</a></li>
+                                </ul>
+                                <ul class=" leading-[40px]">
+                                    <li  class="font-bold">SHOP PAGES</li>
+                                    <li class="hover-move-right"><a href="#">Login</a></li>
+                                    <li class="hover-move-right"><a href="#">Register</a></li>
+                                    <li class="hover-move-right"><a href="#">My Account</a></li>
+                                    <li class="hover-move-right"><a href="#">Cart</a></li>
+                                    <li class="hover-move-right"><a href="#">Checkout</a></li>
+                                    <li class="hover-move-right"><a href="#">Wishlist</a></li>
+                                </ul>
+                                <div class=" w-[40%]">
+                                    <img src="./image/banner-12.jpg" alt="">
+                                </div>
+                               </div>
+                        </div>
+                    </li>
+                    <li class="h-24 flex items-center hover:text-primary"><a href="#">ABOUT</a></li>
+                    <li class="h-24 flex items-center hover:text-primary cursor-pointer relative group pl-2">BLOG
+                        <i class="fa-solid fa-angle-down"></i>
+                        <!-- =========>> 4th dropdown <<=========-->
+                        <ul class="absolute top-[96px] left-[-25px]  text-black bg-white w-56 py-2 pl-6 leading-[40px] hidden group-hover:block z-[1]">
+                            <li class="hover-move-right"><a href="#">Blogs</a></li>
+                            <li class="hover-move-right"><a href="#">Blog Standard</a></li>
+                            <li class="hover-move-right"><a href="#">Blog Grid</a></li>
+                            <li class="hover-move-right"><a href="#">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="h-24 flex items-center hover:text-primary"><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <ul class="flex w-48 justify-between">
+            <li class="relative group hover:text-primary cursor-pointer h-24 flex items-center px-4">
+                <i class="fa-regular fa-user"></i>
+                <!-- =========>> 5th dropdown <<=========-->
+                <ul class="absolute top-[96px] left-0 text-black bg-white w-44 py-2 pl-6 z-[1] leading-[35px] hidden group-hover:block">
+                    <li class="hover-move-right"><a href="#">Login</a></li>
+                    <li class="hover-move-right"><a href="#">Sign Up</a></li>
+                    <li class="hover-move-right"><a href="#">My Account</a></li>
+                    <li class="hover-move-right"><a href="#">Wishlist</a></li>
+                </ul>
+            </li>
+            <li class="h-24 hover:text-primary cursor-pointer flex items-center  px-4">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li class="h-24 hover:text-primary cursor-pointer flex items-center px-4">
+                <i class="fa-solid fa-basket-shopping"></i>
+            </li>
+            <li class="h-24 hover:text-primary cursor-pointer flex items-center px-4 text-2xl" id="toggleButton">
+                <i class="fa-solid fa-bars"></i>
+            </li>
+            </ul>
+        </div>
+       </div>
+    </div>
+    <!-- =========>> END OF NAV Bar styling <<=========-->
+
+    <!-- ========>> LARGE Screen carousel <<======= -->
+    <div class=" w-[450px] h-[600px] py-4 bg-white fixed top-0 right-0 z-[2] overflow-y-scroll snap-y transform  translate-x-full transition-transform duration-300 hidden lg:block" id="hiddenBox1">
+        <div class="px-2 relative ">
+            <div class="absolute left-5 top-3 hover:text-primary text-xl cursor-pointer" id="cancelButton1">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="flex flex-col items-center text-lg">
+                <div>
+                    <a href="index.html">
+                        <img src="./image/logo.png" alt="">
+                    </a>
+                    <p>+123-09060936868</p>
+                </div>
+                <div class=" text-center leading-[40px]">
+                    <p>Free Shipping On Orders</p>
+                    <p>A101, Mumbai, India</p>
+                </div>
+            </div>
+            <div class="flex justify-between mt-16 pb-2 font-bold text-lg border-b-[1px] border-gray-200">
+                <h3>Product Preview</h3>
+                <h3>Price</h3>
+                <h3>Action</h3>
+            </div>
+            <div class="flex justify-between items-center py-2 text-lg border-b-[1px] border-gray-200">
+                <div>
+                    <img src="./image/1.png" alt="">
+                    <p>Sonata Supersonic</p>
+                </div>
+                <p>$2020</p>
+                <p>X</p>
+            </div>
+            <div class="flex justify-between items-center py-2 text-lg border-b-[1px] border-gray-200">
+                <div>
+                    <img src="./image/2.png" alt="">
+                    <p>Sonata Supersonic</p>
+                </div>
+                <p>$2020</p>
+                <p>X</p>
+            </div>
+            <div class="flex justify-between items-center py-2 mb-6 text-lg border-b-[1px] border-gray-200">
+                <div>
+                    <img src="./image/3.png" alt="">
+                    <p>Sonata Supersonic</p>
+                </div>
+                <p>$2020</p>
+                <p>X</p>
+            </div>
+            <div class=" px-8 border-t-[1px] border-gray-200 pt-3">
+                <ul class="flex justify-between">
+                    <li class="relative cursor-pointer" onclick="toggleDropdown('dropDownmenu3')">English
+                        <ul class="absolute top-[-125px] bg-white  shadow-xl leading-[35px] py-2 w-36 hidden" id="dropDownmenu3">
+                            <li class="px-2 border-b-[1px] border-gray-200"><a href="#">Italian</a></li>
+                            <li class="px-2 border-b-[1px] border-gray-200"><a href="#">German</a></li>
+                            <li class="px-2"><a href="#">Spanish</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative cursor-pointer" onclick="toggleDropdown('dropDownmenu4')">INR
+                        <ul class="absolute top-[-80px] bg-white  shadow-xl leading-[25px] w-16 hidden" id="dropDownmenu4">
+                            <li class="px-2 hover:bg-blue-600">INR</li>
+                            <li class="px-2 hover:bg-blue-600">USD</li>
+                            <li class="px-2 hover:bg-blue-600">AUD</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ========>> END OF LARGE Screen carousel <<======= -->
+
+    <!-- ==========>> SMALL Screen carousel <<========= -->
+    <div class="lg:hidden block bg-white w-[60%] z-[2] px-4 pb-5  max-h-[450px] fixed overflow-y-scroll snap-y top-0 translate-x-[-100%] duration-500 ease-in-out" id="hiddenBox2">
+        <nav>
+            <div class="absolute right-4 top-2 text-2xl hover:text-primary cursor-pointer" id="cancelButton2">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class=" mb-14 bg-black flex justify-center mt-10"> 
+                <a href="index.html">
+                    <img src="./image/logo.png" alt="">
+                </a>
+            </div>
+            <ul class="list-disc leading-[50px] relative">
+                <li class="borderr cursor-pointer list-none">Home<span class="absolute right-0">1</span>
+                    <ul class="hidden-ul pl-5">
+                        <li class="borderr"><a href="#">Home Page V1</a></li>
+                        <li class="borderr"><a href="#">Home Page V2</a></li>
+                        <li class=""><a href="#">Home Page V3</a></li>
+                    </ul>
+                </li>
+                <li class="borderr cursor-pointer list-none">Shop<span class="absolute right-0">1</span>
+                    <ul class="hidden-ul pl-5">
+                        <li class="borderr"><a href="#">Shop Grid</a></li>
+                        <li class="borderr"><a href="#">Shop List</a></li>
+                        <li class="borderr"><a href="#">Shop Full Width</a></li>
+                        <li class="borderr"><a href="#">Shop Grid 2</a></li>
+                        <li class="borderr"><a href="#">Product Details</a></li>
+                        <li class=""><a href="#">Product Details 2</a></li>
+                    </ul>
+                </li>
+                <li class="borderr list-none">ABout</li>
+                <li class="borderr list-none">Pages<span class="absolute right-0">1</span>
+                    <ul class="hidden-ul pl-5">
+                        <li class="borderr"><a href="#">Shop Grid</a></li>
+                        <li class="borderr"><a href="#">Shop List</a></li>
+                        <li class="borderr"><a href="#">Shop Full Width</a></li>
+                        <li class="borderr"><a href="#">Filter Sidebar</a></li>
+                        <li class="borderr"><a href="#">Product Details</a></li>
+                        <li class=""><a href="#">Product Details 2</a></li>
+                    </ul>
+                </li>
+                <li class="borderr list-none">Shop Pages<span class="absolute right-0">1</span>
+                    <ul class="hidden-ul pl-5">
+                        <li class="borderr"><a href="#">Login</a></li>
+                        <li class="borderr"><a href="#">Register</a></li>
+                        <li class="borderr"><a href="#">My Account</a></li>
+                        <li class="borderr"><a href="#">Cart</a></li>
+                        <li class="borderr"><a href="#">Checkout</a></li>
+                        <li class=""><a href="#">Wishlist</a></li>
+                    </ul>
+                </li>
+                <li class="borderr list-none">Blog<span class="absolute right-0">1</span>
+                    <ul class="hidden-ul pl-5">
+                        <li class="borderr"><a href="#">Blogs</a></li>
+                        <li class="borderr"><a href="#">Blog Standard</a></li>
+                        <li class="borderr"><a href="#">Blog Grid</a></li>
+                        <li class=""><a href="#">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li class="borderr list-none">Contact Us</li>
+            </ul>
+        </nav>
+    </div>
+    <!-- ========>> END OF Small Screen carousel <<======= -->
+
+    <!-- ===============>> BANNER <<============= -->
+    <section class=" bg-gradient-to-b from-black to-neutral-700 w-full overflow-clip">
+        <div class="lg:px-[100px] big-1">
+            <div class="grid lg:grid-cols-2">
+                <div class="lg:h-[100vh] h-50vh pb-10  pl-5 lg:pl-0 pt-[150px] big-child-1">
+                    <div class="font-serif text-white">
+                        <h1 class="display-1 font-bold mb-5">You’re in good <span class="text-primary">Hands</span> on our <span class="text-primary">Watch</span></h1>
+                        <h4>Our watches are made for your wrists, Crafted with Love & Care.</h4>
+                    </div>
+                    <div class="mt-10">
+                        <button class=" w-36 h-12 rounded bg-black text-white">Shop Now</button>
+                    </div>
+                </div>
+                <div class="lg:h-[100vh] md:pt-10 md:pb-14 lg:pt-[50px] big-child-2 overflow-hidden" id="slider2">
+                    <div class=" absolute lg:block hidden">
+                        <img class="w-[2000px]" src="./image/cta-shape-1.png" alt="">
+                    </div>
+                    <div class="slider-inner2 w-[100%] flex transition duration-500 ease-linear transform relative">
+                        <div class="absolute lg:block w-[100%] flex-shrink-0 flex transition duration-500 ease-linear transform top-[50px] justify-center items-center slider-item2">
+                            <img src="./image/7.png" alt="">
+                        </div> 
+                        <!-- <div class="absolute lg:block w-[100%] flex-shrink-0 flex transition duration-500 ease-linear transform top-[50px] justify-center items-center slider-item2">
+                            <img src="./image/8.png" alt="">
+                        </div> 
+                        <div class="absolute lg:block w-[100%] flex-shrink-0 flex transition duration-500 ease-linear transform top-[50px] justify-center items-center slider-item2">
+                            <img src="./image/9.png" alt="">
+                        </div> 
+                        <div class="absolute lg:block w-[100%] flex-shrink-0 flex transition duration-500 ease-linear transform top-[50px] justify-center items-center slider-item2">
+                            <img src="./image/4.png" alt="">
+                        </div> 
+                        <div class="absolute lg:block w-[100%] flex-shrink-0 flex transition duration-500 ease-linear transform top-[50px] justify-center items-center slider-item2">
+                            <img src="./image/5.png" alt="">
+                        </div> 
+                        <div class="absolute lg:block w-[100%] flex-shrink-0 flex transition duration-500 ease-linear transform top-[50px] justify-center items-center slider-item2">
+                            <img src="./image/6.png" alt="">
+                        </div> -->
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===============>> END Banner <<============= -->
+    
+    <!--============>> ABOUT section star <<===========-->
+    <section class="lg:px-[100px] w-full overflow-hidden">
+        <div class="px-5 big-1 py-12 grid lg:grid-cols-3 gap-5 relative overflow-hidden">
+            <div class=" absolute bottom-0 lg:left-0 left-[-80px]">
+                <img src="./image/dots-wide.png" alt="">
+            </div>
+           <div class="lg:col-span-1 relative rounded overflow-hidden" id="slider1">
+            <div class=" flex transition-transform duration-500 ease-in-out rounded z[-1] slider-inner">
+                <div class="bg-[url('./image/texture-bg.png')] flex-shrink-0 bg-cover px-5 py-7 w-[100%] lg:h-[550px] h-[550px] md:h-[650px] overflow-hidden rounded relative slider-item">
+                   <div>
+                    <div class="flex items-end">
+                        <p class="text-lg md:text-xl text-primary font-bold">20% To 50% off</p>
+                        <div class="w-14 border-b-2 border-secondary mb-2 ml-2"></div>
+                    </div>
+                    <h3 class="text-4xl text-white font-bold">Super Smart Sale Live</h3>
+                   </div>
+                   <div class="px-2 py-3 mt-5 w-[150px] bg-secondary text-white rounded font-semibold flex justify-center">
+                    <a href="#">Shop Now</a>
+                    </div>
+                    <div>
+                        <img src="./image/top.png" alt="">
+                    </div>
+                    <img src="./image/dots.png" alt="" class="absolute right-8 bottom-8">
+                </div>
+
+                <div class="bg-[url('./image/texture-bg.png')] flex-shrink-0 bg-cover px-5 py-7 w-[100%] lg:h-[550px] h-[550px] md:h-[650px] overflow-hidden rounded relative slider-item">
+                    <div>
+                     <div class="flex items-end">
+                        <p class="text-lg md:text-xl text-primary font-bold">20% To 50% off</p>
+                        <div class="w-14 border-b-2 border-secondary mb-2 ml-2"></div>
+                      </div>
+                      <h3 class="text-4xl text-white font-bold">Super Smart Sale Live</h3>
+                    </div>
+                    <div class="px-2 py-3 mt-5 w-[150px] bg-secondary text-white rounded font-semibold flex justify-center">
+                     <a href="#">Shop Now</a>
+                     </div>
+                    <div>
+                        <img src="./image/top-1.png" alt="" class="md:w-[70%] w-auto">
+                    </div>
+                    <img src="./image/dots.png" alt="" class="absolute right-8 bottom-8">
+                </div>
+
+                <div class="bg-[url('./image/texture-bg.png')] flex-shrink-0 bg-cover px-5 py-7 w-[100%] lg:h-[550px] h-[550px] md:h-[650px] overflow-hidden rounded relative slider-item">
+                    <div>
+                     <div class="flex items-end">
+                        <p class="text-lg md:text-xl text-primary font-bold">20% To 50% off</p>
+                        <div class="w-14 border-b-2 border-secondary mb-2 ml-2"></div>
+                     </div>
+                     <h3 class="text-4xl text-white font-bold">Super Smart Sale Live</h3>
+                    </div>
+                    <div class="px-2 py-3 mt-5 w-[150px] bg-secondary text-white rounded font-semibold flex justify-center">
+                     <a href="#">Shop Now</a>
+                    </div>
+                    <div>
+                        <img src="./image/top.png" alt="">
+                    </div>
+                    <img src="./image/dots.png" alt="" class="absolute right-8 bottom-8">
+                </div>
+              </div>
+           </div>
+           <div class="lg:col-span-2 z-[1]">
+            <div class="bg-white px-5 lg:px-12 py-14 rounded-lg">
+                <div class="mb-4">
+                    <h4 class="font-extrabold">Our Categories</h4>
+                </div>
+                <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5">
+                    <div class=" border-[1px] hover:border-none hover:shadow-xl flex flex-col items-center justify-center py-5 transform duration-300 ease-in-out">
+                        <img class="w-[80%]" src="./image/men3.png" alt="">
+                            <p class="pb-5 text-primary">Men</p>
+                    </div>
+                    <div  class=" border-[1px] hover:border-none hover:shadow-xl flex flex-col items-center justify-center py-5 transform duration-300 ease-in-out">
+                        <img  class="w-[80%]" src="./image/women3.png" alt="">
+                        <p class="pb-5 text-primary">Women</p>
+                    </div>
+                    <div  class=" border-[1px] hover:border-none hover:shadow-xl flex flex-col items-center justify-center py-5 transform duration-300 ease-in-out">
+                        <img class="w-[80%]" src="./image/mens1.png" alt="">
+                        <p class="pb-5 text-primary">Kids</p>
+                    </div>
+                    <div  class=" border-[1px] hover:border-none hover:shadow-xl flex flex-col items-center justify-center py-5 transform duration-300 ease-in-out">
+                        <img class="w-[80%]" src="./image/couple3.png" alt="">
+                        <p class="pb-5 text-primary">Couples</p>
+                    </div>
+                    <div  class=" border-[1px] hover:border-none hover:shadow-xl flex flex-col items-center justify-center py-5 transform duration-300 ease-in-out">
+                        <img class="w-[80%]" src="./image/minimal.png" alt="">
+                        <p class="pb-5 text-primary">Minimals</p>
+                    </div>
+                    <div  class=" border-[1px] hover:border-none hover:shadow-xl flex flex-col items-center justify-center py-5 transform duration-300 ease-in-out">
+                        <img class="w-[80%]" src="./image/leather.png" alt="">
+                        <p class="pb-5 text-primary">Leather</p>
+                    </div>
+                    <div  class=" border-[1px] hover:border-none hover:shadow-xl flex flex-col items-center justify-center py-5 transform duration-300 ease-in-out">
+                        <img class="w-[80%]" src="./image/metal.png" alt="">
+                        <p class="pb-5 text-primary">Metal</p>
+                    </div>
+                    <div  class=" border-[1px] hover:border-none hover:shadow-xl flex flex-col items-center justify-center py-5 transform duration-300 ease-in-out">
+                        <img class="w-[80%]" src="./image/smartwatch.png" alt="">
+                        <p class="pb-5 text-primary">Smartwatch</p>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+    <!--============>> ABOUT section end <<===========-->
+
+    <!--============>> BRAND filter start <<===============-->
+    <section class=" lg:px-[100px] pb-12 big-1 flex flex-col items-center" >
+        <div class="flex flex-col items-center lg:w-[70%]">
+            <h5 class="font-semibold text-xl">Shop <span class="text-redd">Now</span></h5>
+            <h1 class="font-bold text-5xl md:text-6xl text-center leading-[60px] big-text">Great Deals from Top-Rated Products</h1>
+        </div>
+        
+        <div class="py-10 grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 gap-5 font-semibold text-lg">
+            <div class="bg-white p-4 w-44 cursor-pointer rounded text-center shadow-xl transition duration-[0.3s] ease-in-out category-btn btn" id="features-btn">Featured</div>
+            <div class="bg-white p-4 w-28 cursor-pointer rounded text-center shadow-xl transition duration-[0.3s] ease-in-out category-btn btn" id="sales-btn">Sale</div>
+            <div class="bg-white p-4 w-44 cursor-pointer rounded text-center shadow-xl transition duration-[0.3s] ease-in-out category-btn btn" id="new-arrivals-btn">New Arrivals</div>
+            <div class="bg-white p-4 w-44 cursor-pointer rounded text-center shadow-xl transition duration-[0.3s] ease-in-out category-btn btn" id="bestsellers-btn">BestSeller</div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-5 transition duration-[8s] ease-in-out" id="products-container"></div>
+    </section>
+    <!--============>> BRAND filter end <<===============-->
+
+   <div class="hidden">
+    <div class=" w-[100%] h-[100vh] bg-gray-400 flex justify-center items-center fixed top-0 left-0 overflow-y-scroll overscroll-contain z-[1] scrollbar">
+        <div class=" lg:w-[70%] w-[95%] py-3 px-4 lg:mt-[100px] mt-[500px] mb-[50px] rounded-lg bg-white grid lg:grid-cols-2 grid-cols-1">
+            <div class="pt-[70px]">
+                <img src="./image/sd-2.png" alt="">
+            </div>
+            <div>
+                <div class="pt-[120px]">
+                    <h1 class="text-3xl font-bold font-serif mb-3">Titan Mechanical</h1>
+                    <div class="pb-5 borderr">
+                        <span>*******</span>
+                        <span class=" text-gray-700 font-semibold"><a href="#">( 8 Customber Reviews )</a></span>
+                    </div>
+                    <div class=" flex gap-5 text-xl font-bold mt-3">
+                        <span class=" line-through">$100.00</span>
+                        <span class=" text-red-600">$75.00</span>
+                        <span class="text-sm flex justify-center items-center text-white bg-secondary px-2 py- rounded-2xl">25% OFF</span>
+                    </div>
+                    <div class="text-lg text-gray-600 mt-3">
+                        <p>Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.</p>
+                    </div>
+                    <div class="mt-3 font-semibold">
+                        <h3 class="font-bold text-lg">Product Features:</h3>
+                        <ul class="list-disc list-inside mt-2 pb-5 borderr">
+                            <li>SKU: <span class=" font-normal text-gray-600">1998</span></li>
+                            <li>Product Id: <span class=" font-normal text-gray-600">0707</span></li>
+                            <li>Product Category: <span class=" font-normal text-gray-600">Men's Wrist Watch<span></li>
+                            <li>Battery Capacity: <span class=" font-normal text-gray-600">72 Hours</span></li>
+                        </ul>
+                    </div>
+                    <div class="borderr">
+                        <div class="flex justify-between mt-3 pb-5  w-[50%]">
+                            <div>
+                                <h3 class="font-bold text-gray-600">Select Size</h3>
+                                <div class="flex justify-between gap-3 mt-3">
+                                    <span class="border border-gray-400 rounded px-2">S</span>
+                                    <span class="border border-gray-400 rounded px-2">M</span>
+                                    <span class="border border-gray-400 rounded px-2">L</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-600">Colors</h3>
+                                <div class="mt-3">
+                                    <span class="w-[13px] h-[13px] rounded-full bg-blue-600"></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+   </div>
+    
+   <!--============>> CALL to action start <<==============-->
+   <section class="bg-[url('./image/bg1.jpg')] bg-center bg-cover bg-no-repeat w-[100%] h-[400px] py-[100px] pr-[10px] lg:pr-[150px] big-2">
+        <div class="lg:flex">
+            <div class=" lg:w-[50%] w-[0%]"></div>
+            <div class="lg:w-[50%] w-[100%] lg:pl-32 pl-14 big-2-chd">
+                <div class="text-white">
+                    <h1 class="lg:text-5xl text-xl font-serif font-bold">Find Your Perfect Match</h1>
+                    <p class="mt-3 text-gray-50 text-lg">Sign up now to hear about our latest offers, new products, collaborations, all things Noise - straight to your inbox.</p>
+                </div>
+                <div class="flex justify-end mt-10 big-1">
+                    <a href="#"><button class="h-12 w-40 rounded bg-black text-white font-semibold mr-1">Shop Now</button></a>
+                    <a href="#"><button class="h-12 w-40 rounded bg-white text-black font-semibold">Sign Up</button></a>
+                </div>
+            </div>
+        </div>
+   </section> 
+   <!--============>> CALL to action end here <<==============-->
+   
+   <section class="background grid lg:grid-cols-2 grid-cols-1">
+        <div class=" bg-primary clip py-[100px] lg:pl-[100px]">
+            <div class="lg:px-0 px-10">
+                <p class="lg:text-3xl text-2xl font-semibold text-red-600">Opulent Ninja Green</p> 
+                <h1 class="lg:text-5xl text-4xl mt-2  text-white font-bold lg:w-[70%] ">Neo Splash Blue Dial Watch</h1>
+                <p class="text-white text-lg lg:w-[95%] mt-5">This 44mm Minimalist features a black sunray dial with Roman numeral and stick indices, three-hand movement and a brown leather strap.</p>
+            </div>
+            <div class="lg:px-0 px-10 flex gap-15 lg:w-[80%] text-white">
+                <div class="pr-5 border-primary lg:border-r-[1px] md:border-r-[1px] lg:h-15 mt-10">
+                    <h3 class="lg:text-lg text-sm lg:leading-[18px]">Movement</h3>
+                    <h1 class="lg:text-3xl text-xl font-bold">Quartz</h1>
+                </div>
+                <div class="px-7 border-primary lg:border-r-[1px] md:border-r-[1px] lg:h-15 mt-10">
+                    <h3 class="lg:text-lg text-sm lg:leading-[18px]">Movement</h3>
+                    <h1 class="lg:text-3xl text-xl font-bold">Quartz</h1>
+                </div>
+                <div class="lg:h-15 mt-10 pl-5">
+                    <h3 class="lg:text-lg text-sm lg:leading-[18px]">Movement</h3>
+                    <h1 class="lg:text-3xl text-xl font-bold">Quartz</h1>
+                </div>
+            </div>
+            <div class="flex items-center gap-10 h-2 mt-10 lg:px-0 px-10">
+                <div>
+                    <a href="#"><button class="h-12 w-40 rounded bg-secondary text-white font-semibold mr-1">Product Details</button></a>
+                </div>
+                <div>
+                    <p class=" text-white">Price:<span class="text-2xl font-bold">8420$</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="background py-[100px]"></div>
+   </section>
+
+
+
+    <script src="https://kit.fontawesome.com/bcddffdf4c.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
+

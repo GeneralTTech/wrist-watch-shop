@@ -1,0 +1,273 @@
+{
+   "features": [
+        {
+            "id": 1,
+            "name": "Neo Splash",
+            "type": "Mechanical",
+            "price": "$9000",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "./image/f1.jpg"
+        },
+
+        {
+            "id": 2,
+            "name": "Utsav Blue",
+            "type": "Dial Watch",
+            "price": "$6500",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "./image/f2.jpg"
+        },
+
+        {
+            "id": 3,
+            "name": "World Time",
+            "type": "Vintage",
+            "price": "$8080",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "./image/f3.jpg"
+        },
+
+        {
+            "id": 4,
+            "name": "Reflex Play",
+            "type": "Sports",
+            "price": "$4100",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "./image/f4.jpg"
+        },
+
+        {
+            "id": 5,
+            "name": "Color Fit",
+            "type": "Smartwatch",
+            "price": "$7400",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "./image/f5.jpg"
+        }, 
+
+        {
+            "id": 6,
+            "name": "Quantum R12",
+            "type": "Classic",
+            "price": "$6800",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "./image/f6.jpg"
+        }
+    ],
+
+    "sales": [
+        {
+            "id": 1,
+            "name": "Ultimate Runner",
+            "type": "Smartwatch",
+            "price": "$3500",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f3.jpg"
+        },
+
+        {
+            "id": 2,
+            "name": "Worker Watch",
+            "type": "Office",
+            "price": "$1500",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f4.jpg"
+        },
+
+        {
+            "id": 3,
+            "name": "Rega Ceramics",
+            "type": "Metal",
+            "price": "$2000",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f5.jpg"
+        },
+
+        {
+            "id": 4,
+            "name": "Marline Brook",
+            "type": "Leather",
+            "price": "$2300",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f6.jpg"
+        },
+
+        {
+            "id": 5,
+            "name": "New Splash",
+            "type": "Mechanical",
+            "price": "$7400",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f3.jpg"
+        }, 
+
+        {
+            "id": 6,
+            "name": "Utsav Green",
+            "type": "Classic",
+            "price": "$3000",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f1.jpg"
+        }
+    ],
+
+    "newArrivals": [
+        {
+            "id": 1,
+            "name": "Reflex Power",
+            "type": "Leather",
+            "price": "$5200",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f2.jpg"
+        },
+
+        {
+            "id": 2,
+            "name": "Moonlight Mother",
+            "type": "Women",
+            "price": "$4100",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f6.jpg"
+        },
+
+        {
+            "id": 3,
+            "name": "Edge Rose",
+            "type": "Office Wear",
+            "price": "$8200",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f5.jpg"
+        },
+
+        {
+            "id": 4,
+            "name": "Expediation",
+            "type": "Seiera",
+            "price": "$3500",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f4.jpg"
+        },
+
+        {
+            "id": 5,
+            "name": "Dagger",
+            "type": "Mechanical",
+            "price": "$6200",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f3.jpg"
+        }, 
+
+        {
+            "id": 6,
+            "name": "Vintage T23",
+            "type": "Metal",
+            "price": "$4100",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f1.jpg"
+        }
+    ],
+
+    "bestsellers": [
+        {
+            "id": 1,
+            "name": "Vintage T23",
+            "type": "Mechanical",
+            "price": "$3700",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f6.jpg"
+        },
+
+        {
+            "id": 2,
+            "name": "World Time",
+            "type": "Mechanical",
+            "price": "$7400",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f5.jpg"
+        },
+
+        {
+            "id": 3,
+            "name": "Reflex Power",
+            "type": "Mechanical",
+            "price": "$5120",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f6.jpg"
+        },
+
+        {
+            "id": 4,
+            "name": "Neo Splash",
+            "type": "Mechanical",
+            "price": "$3500",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f3.jpg"
+        },
+
+        {
+            "id": 5,
+            "name": "Marline Splash",
+            "type": "Mechanical",
+            "price": "$9600",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f2.jpg"
+        }, 
+
+        {
+            "id": 6,
+            "name": "Ceramics Splash",
+            "type": "Mechanical",
+            "price": "$3500",
+            "discountedprice": "-25%",
+            "button1": "Quick view",
+            "button3": "Add To cart",
+            "image": "https://thetestingstudio.com/wristarc/assets/img/home1/f3.jpg"
+        }
+    ]
+}

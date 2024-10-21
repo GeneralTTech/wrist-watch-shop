@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+    list-style: none;
+} */
+
+body{
+    background-color: #F8F8F8;
+}
+
+
+.show-box {
+    transform: translateX(0);
+}
+
+
+.hover-move-right {
+    transition: transform 0.3s ease;
+}
+.hover-move-right:hover {
+    transform: translateX(10px);
+    color: #A67314;
+}
+
+.borderr{
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.hidden-ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+.show-ul {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.display-1{
+    font-size: calc(1.1rem + 2.1vw);
+}
+
+.btn.active {
+    background-color: #A67314;
+    @apply shadow-2xl  text-white
+  }
+
+h4{
+    font-size: calc(1.275rem + 0.3vw);
+}
+
+.scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+.background{
+    background-color: #111111;
+}
+
+
+@media (min-width: 1024px) {
+    .clip{
+        clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%) !important;
+    }  
+
+    .background{
+        background-color: rgba(12, 8, 0) !important;
+        opacity: 1 !important;
+    }
+}
+
+
+@media (min-width: 2560px) {
+    .big-1{
+       padding: 30px 600px !important;
+    }
+
+    .big-child-1{
+        height: 50vh !important;
+    }
+
+    .big-child-1 h1{
+        font-size: 3.75rem !important;
+    }
+
+    .big-child-2{
+        height: 50vh !important;
+    }
+   .big-text{
+    font-size: 3.75rem !important;
+   }
+
+   .big-2{
+    padding-right: 700px !important;
+   }
+
+   .big-2-chd{
+    padding-left: 300px !important;
+   }
+}
+
